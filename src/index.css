@@ -1,0 +1,25 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.ant-menu-item-selected{
+  background-color: #114E7B !important;
+}
+.ant-menu{
+  background-color: inherit !important;
+}
+.ant-menu-title-content a{
+  color: #EBEBED !important;
+}
+.ant-input{
+  background-color: rgba(35, 35, 35, 0.05) !important;
+}
+.ant-table-cell{
+  font-size: 18px;
+}
+th.ant-table-cell{
+  font-size: 20px;
+  color: #B0B7CE !important;
+}

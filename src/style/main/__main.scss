@@ -1,0 +1,51 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    &__lists {
+        width: 130px;
+        height: 150px;
+        background-color: #fff;
+        border-radius: 8px;
+        text-align: center;
+        padding-top: 20px;
+        margin-right: 33px;
+        box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.1);
+        &_long {
+            width: 262px;
+            height: 151px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            padding-top: 14px;
+            margin-right: 14px;
+        }
+        &_text {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        &_price {
+            &-blue {
+                color: rgba(22, 97, 153, 1);
+                font-weight: 600;
+                font-size: 24px;
+            }
+            &-red{
+                font-weight: 600;
+                font-size: 24px;
+                color: rgba(255, 82, 82, 1);
+            }
+            &-green{
+                font-weight: 600;
+                font-size: 24px;
+                color: rgba(0, 142, 118, 1);
+            }
+            &-yellow{
+                font-weight: 600;
+                font-size: 24px;
+                color: rgba(255, 170, 0, 1);
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.groups {
+    display: flex;
+    background-color: #fff;
+    padding-left: 30px;
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 30px;
+        &_title {
+            font-size: 24px;
+            font-weight: 500;
+            color: #166199;
+            margin-right: 466px;
+            margin-top: 26px;
+        }
+        &_file{
+            width: 159px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #29A0E3;
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+        }
+        &_file span{
+            margin-left: 4px;
+        }
+        &_input{
+            width: 250px;
+            height: 44px;
+            margin-top: 16px;
+            margin-right: 19px;
+            cursor: pointer;
+            }
+            &_input::placeholder{
+            font-size: 16px;
+            font-style: italic;
+        }
+        &_input Input{
+            height: 44px;
+        }
+        &_filter{
+            width: 142px;
+            height: 44px;
+            margin-top: 19px;
+            font-size: 18px;
+            background-color: rgba(41, 160, 227, 0.1);
+            color: #29A0E3;
+            border-radius: 8px;
+            margin-right: 13px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+        &_add{
+            width: 133px;
+            height: 44px;
+            font-size: 18px;
+            background-color: rgba(22, 97, 153, 0.1);
+            margin-top: 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+    }
+}

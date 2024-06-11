@@ -1,0 +1,56 @@
+.header{
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    &__title{
+        margin-top: 25px;
+        margin-right: 510px;
+    }
+    &__products{
+        display: flex;
+        align-items: center;
+        margin-top: 18px;
+        &_btn{
+            width: 150px;
+            height: 44px;
+            border-radius: 8px;
+            background-color: #166199;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: color 0.4s ease;
+            margin-right: 7px;
+            border: none;
+            outline: none;
+        }
+        &_btn:hover{
+            color: #166199;
+            background-color: inherit;
+            border: 1px solid #166199;
+        }
+        &_item{
+            display: flex; 
+            align-items: center;
+            list-style-type: none;
+            &-user{
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                padding: 10px;
+                background-color: rgba(7, 162, 135, 0.1);
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            &-name{
+                font-size: 16px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+}
+
