@@ -1,10 +1,11 @@
 import { Input, Upload } from "antd";
 import "../../../style/main/index.scss"
 import { DownloadOutlined, SearchOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 const Lists = () => {
   return (
       <div className='lists'>
-          <h3 className='lists__link'>#P-10/2023 guruh</h3>
+          <Link to={"/groups"} className='lists__link'>#P-10/2023 guruh</Link>
           <Upload className='lists__file'>
               <p>
                   Export excel
