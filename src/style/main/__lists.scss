@@ -1,0 +1,47 @@
+.lists{
+    display: flex;
+    align-items: center;
+    &__link{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        color: #166199;
+        margin-top: 20px;
+        margin-right: 430px;
+    }
+    &__file{
+            width: 159px;
+            font-weight: 500;
+            color: #29A0E3;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-right: 18px;
+            border: none;
+        }
+        &__file span{
+            margin-left: 4px;
+        }
+        button{
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+        }
+        &__btn_add{
+            width: 207px;
+            height: 44px;
+            font-size: 18px;
+            background-color: rgba(22, 97, 153, 0.1);
+            color: #166199;
+            margin-top: 15px;
+            margin-right: 13px;
+        }
+        &__btn_course{
+            width: 168px;
+            height: 44px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #166199;
+            margin-top: 15px;
+        }
+}
