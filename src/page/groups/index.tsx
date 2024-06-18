@@ -1,13 +1,16 @@
 import {  Input, Upload } from "antd";
-import "../../style/main/__groups.scss";
+import "../../style/main/index.scss";
 import { DownloadOutlined, SearchOutlined } from "@ant-design/icons";
 import GroupsTable from "./table";
+import UseDrawer from "./useDrawer";
+import SetOpenDrawer from "../../hook/setOpenDrawer";
 
 const Groups = () => {
+    const { open, onOpen, onClosed } = SetOpenDrawer()
+    console.log(onOpen);
+    
     return (
         <>
-        
-        
         <div className='groups'>
             <form className='groups__form'>
                 <h2 className='groups__form_title'>Guruhlar ro'yxati</h2>
@@ -26,7 +29,8 @@ const Groups = () => {
                         className='groups__form_input'
                 />
                 <button className="groups__form_filter">Filter</button>
-                <button className="groups__form_add">+ Qo'shish</button>
+                    <button type="button" className="groups__form_add" onClick={onOpen}>+ Qo'shish</button>
+                    <UseDrawer open={open} onClosed={onClosed} />
             </form>
             </div>
             <GroupsTable />
