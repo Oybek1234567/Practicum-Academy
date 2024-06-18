@@ -1,6 +1,6 @@
 export interface IDataType {
     id: number;
-    key: string;
+    kalit: string;
     link: string;
     group: string;
     day: string;
@@ -14,7 +14,7 @@ export interface IDataType {
 const Data: IDataType[] = [
     {
         id: 1,
-        key: "1",
+        kalit: "1",
         link: "#P-10/2023",
         group: "Bugalteriya hisobi",
         day: "Juft kunlar",
@@ -26,7 +26,7 @@ const Data: IDataType[] = [
     },
     {
         id: 2,
-        key: "1",
+        kalit: "1",
         link: "#P-10/2023",
         group: "Bugalteriya hisobi",
         day: "Juft kunlar",
@@ -38,7 +38,7 @@ const Data: IDataType[] = [
     },
     {
         id: 3,
-        key: "1",
+        kalit: "1",
         link: "#P-10/2023",
         group: "Bugalteriya hisobi",
         day: "Juft kunlar",
@@ -50,7 +50,7 @@ const Data: IDataType[] = [
     },
     {
         id: 4,
-        key: "1",
+        kalit: "1",
         link: "#P-10/2023",
         group: "Bugalteriya hisobi",
         day: "Juft kunlar",
@@ -62,7 +62,7 @@ const Data: IDataType[] = [
     },
     {
         id: 5,
-        key: "1",
+        kalit: "1",
         link: "#P-10/2023",
         group: "Bugalteriya hisobi",
         day: "Juft kunlar",
@@ -74,7 +74,7 @@ const Data: IDataType[] = [
     },
     {
         id: 6,
-        key: "1",
+        kalit: "1",
         link: "#P-10/2023",
         group: "Bugalteriya hisobi",
         day: "Juft kunlar",
@@ -86,7 +86,7 @@ const Data: IDataType[] = [
     },
     {
         id: 7,
-        key: "1",
+        kalit: "1",
         link: "#P-10/2023",
         group: "Bugalteriya hisobi",
         day: "Juft kunlar",
@@ -98,7 +98,7 @@ const Data: IDataType[] = [
     },
     {
         id: 8,
-        key: "1",
+        kalit: "1",
         link: "#P-10/2023",
         group: "Bugalteriya hisobi",
         day: "Juft kunlar",
@@ -110,7 +110,7 @@ const Data: IDataType[] = [
     },
     {
         id: 9,
-        key: "1",
+        kalit: "1",
         link: "#P-10/2023",
         group: "Bugalteriya hisobi",
         day: "Juft kunlar",
@@ -122,7 +122,7 @@ const Data: IDataType[] = [
     },
     {
         id: 10,
-        key: "1",
+        kalit: "1",
         link: "#P-10/2023",
         group: "Bugalteriya hisobi",
         day: "Juft kunlar",
@@ -134,4 +134,4 @@ const Data: IDataType[] = [
     },
 ];
 
-export {Data,  }
+export {Data}

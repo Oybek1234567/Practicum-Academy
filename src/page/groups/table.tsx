@@ -1,12 +1,11 @@
 import { Table, TableColumnsType } from "antd";
 import { Data, IDataType } from "./data";
 import { Link } from "react-router-dom";
-
 const GroupsTable = () => {
     const columns: TableColumnsType<IDataType> = [
         {
             title: "#",
-            dataIndex: "key",
+            dataIndex: "kalit",
         },
         {
             title: "Guruh kodi",

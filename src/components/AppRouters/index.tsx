@@ -19,6 +19,7 @@ const AppRouters = () => {
                     width={"20%"}
                     style={{ backgroundColor: "#166199" }}>
                     <div className='demo-logo-vertical' />
+                    <Link to={"/"}>
                     <Icons.logo
                         
                         style={{
@@ -27,6 +28,7 @@ const AppRouters = () => {
                         }}
                         
                     />
+                    </Link>
                     <Menu
                         theme='dark'
                         mode='inline'
