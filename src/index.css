@@ -23,3 +23,23 @@ th.ant-table-cell{
   font-size: 20px;
   color: #B0B7CE !important;
 }
+.ant-tabs-tab{
+  width: 351px !important;
+  height: 80px !important;
+  font-size: 20px !important;
+}
+.ant-input{
+  font-style: italic;
+  border-right: none !important;
+}
+.ant-input-group-addon{
+  background-color: rgba(35, 35, 35, 0.05) !important;
+}
+.ant-table-thead .ant-table-cell{
+  background-color: #fff !important;
+  border: none !important;
+}
+.ant-table-cell{
+  font-size: 16px !important;
+  gap: 20px !important;
+}

@@ -318,6 +318,34 @@ export const Icons = {
             />
         </svg>
     ),
+    tick: (props: SVGProps<SVGSVGElement>) => (
+        <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width={22}
+            height={22}
+            fill='none'
+            {...props}>
+            <path
+                fill='#008E76'
+                fillRule='evenodd'
+                d='M11 22a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm-.284-6.551 6.112-7.333L14.95 6.55l-5.255 6.306-2.72-2.721-1.728 1.728 3.667 3.667.946.946.856-1.028Z'
+                clipRule='evenodd'
+            />
+        </svg>
+    ),
+    err: (props: SVGProps<SVGSVGElement>) => (
+        <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width={22}
+            height={22}
+            fill='none'
+            {...props}>
+            <path
+                fill='#FF5252'
+                d='M16.5 1.474A11 11 0 1 1 .006 11.356L0 11l.006-.356A11 11 0 0 1 16.5 1.474Zm-7.138 6.38a1.1 1.1 0 0 0-1.34 1.724L9.444 11l-1.422 1.422-.09.104a1.1 1.1 0 0 0 1.646 1.452L11 12.557l1.422 1.42.104.092a1.1 1.1 0 0 0 1.452-1.647L12.557 11l1.42-1.422.092-.104a1.1 1.1 0 0 0-1.647-1.452L11 9.443l-1.422-1.42-.104-.092-.112-.077Z'
+            />
+        </svg>
+    ),
 };
 
 

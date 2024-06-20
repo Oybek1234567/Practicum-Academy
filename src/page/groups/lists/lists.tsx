@@ -1,15 +1,23 @@
 import { Input, Tabs, Upload } from "antd";
 import "../../../style/main/index.scss";
-import { DownloadOutlined, SearchOutlined } from "@ant-design/icons";
+import {
+    DiffOutlined,
+    DownloadOutlined,
+    FileDoneOutlined,
+    SearchOutlined,
+    UserSwitchOutlined,
+    WalletOutlined,
+} from "@ant-design/icons";
 import { Link } from "react-router-dom";
-import GroupsPupils from "./table/pupils";
-import GroupsJournal from "./table/journal";
-import GroupsPayments from "./table/payments";
-import GroupsLessons from "./table/lessons";
+import GroupsJournal from "./table/journal/journal";
+import GroupsPayments from "./table/payments/payments";
+import GroupsLessons from "./table/lessons/lessons";
+import UseDrawer from "../useDrawer";
+import SetOpenDrawer from "../../../hook/setOpenDrawer";
+import GroupsPupils from "./table/pupils/pupils";
+
 const Lists = () => {
-    const onChange = (key: string) => {
-        console.log(key);
-    };
+    const { open, onOpen, onClosed } = SetOpenDrawer();
     return (
         <div className='lists'>
             <Link to={"/groups"} className='lists__link'>
@@ -29,37 +37,45 @@ const Lists = () => {
                 placeholder='Izlash'
                 className='groups__form_input'
             />
-            <button type='button' className='lists__btn_add'>
-                + O'quvchi qo'shish
+            <button type='button' className='lists__btn' onClick={onOpen}>
+                Darsni boshlash
             </button>
-            <button type='button' className='lists__btn_course'>
-                Kursni yakunlash
-            </button>
+            <UseDrawer open={open} onClosed={onClosed} />
             <Tabs
-                onChange={onChange}
                 type='card'
                 items={[
                     {
                         label: "Pupils",
                         key: "pupils",
+                        icon: <UserSwitchOutlined />,
                         children: <GroupsPupils />,
                     },
                     {
                         label: "Journal",
                         key: "journal",
+                        icon: <DiffOutlined />,
                         children: <GroupsJournal />,
                     },
                     {
                         label: "Payments",
                         key: "payments",
+                        icon: <WalletOutlined />,
                         children: <GroupsPayments />,
                     },
                     {
                         label: "Lessons",
                         key: "lessons",
+                        icon: <FileDoneOutlined />,
                         children: <GroupsLessons />,
                     },
                 ]}
+                size='large'
+                style={{
+                    fontSize: "20px",
+                    marginTop: "30px",
+                    backgroundColor: "#fff",
+                    borderRadius: "8px",
+                }}
             />
         </div>
     );

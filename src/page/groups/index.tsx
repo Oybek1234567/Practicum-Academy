@@ -7,7 +7,6 @@ import SetOpenDrawer from "../../hook/setOpenDrawer";
 
 const Groups = () => {
     const { open, onOpen, onClosed } = SetOpenDrawer()
-    console.log(onOpen);
     
     return (
         <>
