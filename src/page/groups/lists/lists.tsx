@@ -45,25 +45,25 @@ const Lists = () => {
                 type='card'
                 items={[
                     {
-                        label: "Pupils",
+                        label: "O'quvchilar ro'yxati",
                         key: "pupils",
                         icon: <UserSwitchOutlined />,
                         children: <GroupsPupils />,
                     },
                     {
-                        label: "Journal",
+                        label: "Jurnal",
                         key: "journal",
                         icon: <DiffOutlined />,
                         children: <GroupsJournal />,
                     },
                     {
-                        label: "Payments",
+                        label: "To'lovlar grafigi",
                         key: "payments",
                         icon: <WalletOutlined />,
                         children: <GroupsPayments />,
                     },
                     {
-                        label: "Lessons",
+                        label: "Darslar ro'yxati",
                         key: "lessons",
                         icon: <FileDoneOutlined />,
                         children: <GroupsLessons />,

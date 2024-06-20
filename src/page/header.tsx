@@ -9,7 +9,7 @@ const HeaderPage = () => {
               <button className='header__products_btn'>
                   To’lovni kiritish
               </button>
-              <Icons.notification />
+              <Icons.notification className='header__products_notification' />
               <ul className='header__products_item'>
                   <li className='header__products_item-user'>
                       <Icons.user />

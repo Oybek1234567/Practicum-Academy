@@ -112,4 +112,4 @@ const DataJournal: IDataJournal[] = [
         action: "Davomatni yuklash",
     },
 ];
-export {DataJournal}
+export { DataJournal };
