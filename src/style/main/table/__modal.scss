@@ -1,0 +1,28 @@
+.modal-payments{
+    max-width: 650px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+.modal-payments__row {
+    margin-top: 8px;
+}
+.modal-payments__row > th{
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 63px;
+}
+.modal-payments__row > td{  
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 80px;
+    border-bottom: 1px solid #DDEBFF;
+}
+.green{
+    color: #008E76;
+}
+.gray{
+    color: #B0B7CE;
+}
+.red{
+    color: #FF5252;
+}
