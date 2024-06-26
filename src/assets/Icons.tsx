@@ -346,6 +346,64 @@ export const Icons = {
             />
         </svg>
     ),
+    video: (props: SVGProps<SVGSVGElement>) => (
+        <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width={24}
+            height={24}
+            fill='none'
+            {...props}>
+            <path
+                fill='#3F9CFB'
+                fillRule='evenodd'
+                d='M11.998 23.264c6.222 0 11.265-5.043 11.265-11.264 0-6.222-5.044-11.265-11.265-11.265C5.778.735.734 5.778.734 12c0 6.22 5.043 11.264 11.264 11.264Zm-1.367-7.222 5.552-3.206a.967.967 0 0 0 0-1.672L10.63 7.958a.965.965 0 0 0-1.448.837v6.41a.966.966 0 0 0 1.448.837Z'
+                clipRule='evenodd'
+            />
+        </svg>
+    ),
+    closeBtn: (props: SVGProps<SVGSVGElement>) => (
+        <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width={24}
+            height={24}
+            fill='none'
+            {...props}>
+            <path
+                stroke='#9CA2A7'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth={2}
+                d='m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25'
+            />
+        </svg>
+    ),
+    checked: (props: SVGProps<SVGSVGElement>) => (
+        <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width={20}
+            height={20}
+            fill='none'
+            {...props}>
+            <path
+                fill='#fff'
+                d='m17.497 5.833-10 10-4.583-4.583 1.175-1.175 3.408 3.4 8.825-8.817 1.175 1.175Z'
+            />
+        </svg>
+    ),
+
+    closed: (props: SVGProps<SVGSVGElement>) => (
+        <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width={18}
+            height={18}
+            fill='none'
+            {...props}>
+            <path
+                fill='#fff'
+                d='M14.23 6.941V5.9c0-2.25-.54-5.234-5.232-5.234C4.305.666 3.764 3.65 3.764 5.9V6.94c-2.334.291-3.1 1.475-3.1 4.384v1.55c0 3.416 1.041 4.457 4.459 4.457h7.75c3.416 0 4.458-1.041 4.458-4.457v-1.55c0-2.909-.767-4.093-3.1-4.384Zm-5.232 7.675A2.52 2.52 0 0 1 6.48 12.1a2.52 2.52 0 0 1 2.518-2.518 2.525 2.525 0 0 1 2.516 2.518 2.517 2.517 0 0 1-2.516 2.516Zm-3.875-7.75H4.93V5.9c0-2.443.693-4.068 4.068-4.068 3.375 0 4.066 1.625 4.066 4.068v.975H5.123v-.009Z'
+            />
+        </svg>
+    ),
 };
 
 

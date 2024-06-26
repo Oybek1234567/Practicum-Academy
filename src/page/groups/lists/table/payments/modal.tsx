@@ -1,4 +1,4 @@
-import "../../../../../style/main/table/__modal.scss";
+import "../../../../../style/main/table/index.scss";
 
 const ModalItems = () => {
     return (

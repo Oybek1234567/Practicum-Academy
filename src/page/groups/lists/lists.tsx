@@ -11,10 +11,11 @@ import {
 import { Link } from "react-router-dom";
 import GroupsJournal from "./table/journal/journal";
 import GroupsPayments from "./table/payments/payments";
-import GroupsLessons from "./table/lessons/lessons";
+
 import UseDrawer from "../useDrawer";
 import SetOpenDrawer from "../../../hook/setOpenDrawer";
 import GroupsPupils from "./table/pupils/pupils";
+import GroupsLessons from "./table/lessons/lessons";
 
 const Lists = () => {
     const { open, onOpen, onClosed } = SetOpenDrawer();

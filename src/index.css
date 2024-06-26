@@ -4,6 +4,18 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    cursor: pointer;
+}
 .ant-menu-item-selected{
   background-color: #114E7B !important;
 }
