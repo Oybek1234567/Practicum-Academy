@@ -3,15 +3,12 @@ import "../../../../../style/main/table/index.scss";
 import { Icons } from "../../../../../assets/Icons";
 import DataLessons from "./data";
 import SecondCard from "./secondCard";
+import Button from "./Button";
 
 const GroupsLessons = () => {
     const [open, setOpen] = useState(false);
     const [clicked, setClicked] = useState(0);
-    const [secondBtn, setSecondBtn] = useState(false);
 
-    const showSecondBtn = () => {
-        setSecondBtn(true);
-    };
 
     const Clicked = () => {
         setClicked((prevCount) => (prevCount + 1) % 2);
@@ -49,21 +46,7 @@ const GroupsLessons = () => {
                             <span className='lessons__card_time'>
                                 {item.time}
                             </span>
-                            {
-                            !secondBtn && 
-                            <button
-                                className='lessons__card_btn'
-                                onClick={showSecondBtn}>
-                                <Icons.closed /> {item.firstBtn}
-                            </button>
-                            }
-                            {
-                                secondBtn && 
-                            <button className='lessons__card_hideBtn'>
-                                <Icons.tickIcon />
-                                {item.secondBtn}
-                            </button>
-                            }
+                            <Button  />
                         </div>
                     ))}
             </div>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../../../../../style/main/table/index.scss";
 import { Icons } from "../../../../../assets/Icons";
 import DataLessons from "./data";
+import Button from "./Button";
 
 const SecondCard = () => {
     const [open, setOpen] = useState(false);
@@ -49,19 +50,7 @@ const SecondCard = () => {
                             <span className='lessons__card_time'>
                                 {item.time}
                             </span>
-                            {!secondBtn && (
-                                <button
-                                    className='lessons__card_btn'
-                                    onClick={showSecondBtn}>
-                                    <Icons.closed /> {item.firstBtn}
-                                </button>
-                            )}
-                            {secondBtn && (
-                                <button className='lessons__card_hideBtn'>
-                                    <Icons.tickIcon />
-                                    {item.secondBtn}
-                                </button>
-                            )}
+                        <Button />
                         </div>
                     ))}
             </div>
