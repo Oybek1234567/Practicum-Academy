@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { Icons } from "../../../../../assets/Icons";
 
-export interface IDataLessons{
+export interface IDataLessons {
     id: number;
     icon: ReactNode;
     title: string;
@@ -10,7 +10,7 @@ export interface IDataLessons{
     secondBtn: string;
 }
 
-const DataLessons:IDataLessons[] = [
+const DataLessons: IDataLessons[] = [
     {
         id: 1,
         icon: <Icons.video />,
@@ -60,4 +60,4 @@ const DataLessons:IDataLessons[] = [
         secondBtn: "Dars ochilgan",
     },
 ];
-export default DataLessons
+export default DataLessons;

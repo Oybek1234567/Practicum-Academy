@@ -2,9 +2,8 @@ import { useState } from "react";
 import "../../../../../style/main/table/index.scss";
 import { Icons } from "../../../../../assets/Icons";
 import DataLessons from "./data";
-import SecondCard from "./secondCard";
 
-const GroupsLessons = () => {
+const SecondCard = () => {
     const [open, setOpen] = useState(false);
     const [clicked, setClicked] = useState(0);
     const [secondBtn, setSecondBtn] = useState(false);
@@ -28,10 +27,11 @@ const GroupsLessons = () => {
 
     return (
         <>
-            <div className='lessons'>
+            <div className='lessons' style={{
+                borderRadius: "0", marginTop: "-1px",}}>
                 <span className='lessons__header'>
-                    <h3>01</h3>
-                    <b>Kirish</b>
+                    <h3>02</h3>
+                    <b>Boshlang'ich bilimlar</b>
                     <button onClick={onCloseBtn}>
                         <Icons.closeBtn
                             className={`button ${buttonClass}`}
@@ -49,27 +49,24 @@ const GroupsLessons = () => {
                             <span className='lessons__card_time'>
                                 {item.time}
                             </span>
-                            {
-                            !secondBtn && 
-                            <button
-                                className='lessons__card_btn'
-                                onClick={showSecondBtn}>
-                                <Icons.closed /> {item.firstBtn}
-                            </button>
-                            }
-                            {
-                                secondBtn && 
-                            <button className='lessons__card_hideBtn'>
-                                <Icons.tickIcon />
-                                {item.secondBtn}
-                            </button>
-                            }
+                            {!secondBtn && (
+                                <button
+                                    className='lessons__card_btn'
+                                    onClick={showSecondBtn}>
+                                    <Icons.closed /> {item.firstBtn}
+                                </button>
+                            )}
+                            {secondBtn && (
+                                <button className='lessons__card_hideBtn'>
+                                    <Icons.tickIcon />
+                                    {item.secondBtn}
+                                </button>
+                            )}
                         </div>
                     ))}
             </div>
-                <SecondCard />
         </>
     );
 };
 
-export default GroupsLessons;
+export default SecondCard;

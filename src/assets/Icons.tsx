@@ -70,29 +70,20 @@ export const Icons = {
             />
         </svg>
     ),
-    tasks: (props: SVGProps<SVGSVGElement>) => (
-        <svg
-            xmlns='http://www.w3.org/2000/svg'
-            width={24}
-            height={24}
-            fill='none'
-            {...props}>
-            <path
-                stroke='#EBEBED'
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth={2}
-                d='M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2'
-            />
-            <path
-                stroke='#EBEBED'
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth={2}
-                d='M15 2H9a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1Z'
-            />
-        </svg>
-    ),
+    subject: (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={26}
+    fill="none"
+    {...props}
+  >
+    <path
+      fill="#fff"
+      d="M9.96 21.6c.12.4.285.815.496 1.246.21.43.425.815.644 1.154H2.4c-.66 0-1.225-.235-1.696-.706A2.306 2.306 0 0 1 0 21.6V2.4C0 1.74.235 1.175.706.704A2.306 2.306 0 0 1 2.4 0h14.4c.66 0 1.225.235 1.696.706.47.47.705 1.035.704 1.694v8.52c-.36-.04-.76-.06-1.2-.06-.44 0-.84.02-1.2.06V2.4h-6v8.4L7.8 9l-3 1.8V2.4H2.4v19.2h7.56ZM18 25.2c-1.66 0-3.075-.585-4.246-1.756C12.584 22.274 12 20.86 12 19.2c0-1.66.585-3.075 1.756-4.246C14.926 13.784 16.34 13.2 18 13.2c1.66 0 3.075.585 4.246 1.756C23.416 16.126 24 17.54 24 19.2c0 1.66-.585 3.075-1.756 4.246C21.074 24.616 19.66 25.2 18 25.2Zm-1.5-3 4.8-3-4.8-3v6ZM9.96 2.4H2.4h14.4-7.2.36Z"
+    />
+  </svg>
+),
     file: (props: SVGProps<SVGSVGElement>) => (
         <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -333,6 +324,19 @@ export const Icons = {
             />
         </svg>
     ),
+    tickIcon: (props: SVGProps<SVGSVGElement>) => (
+        <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width={16}
+            height={12}
+            fill='none'
+            {...props}>
+            <path
+                fill='#fff'
+                d='m15.497 1.833-10 10L.914 7.25 2.09 6.075l3.408 3.4L14.322.658l1.175 1.175Z'
+            />
+        </svg>
+    ),
     err: (props: SVGProps<SVGSVGElement>) => (
         <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -405,6 +409,3 @@ export const Icons = {
         </svg>
     ),
 };
-
-
-

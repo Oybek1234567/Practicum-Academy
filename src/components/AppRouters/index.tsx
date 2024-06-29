@@ -40,16 +40,6 @@ const AppRouters = () => {
                                         key: id,
                                         label: <Link to={path}>{title}</Link>,
                                         icon: icon,
-                                        children: children.map(
-                                            ({ title, path, id }) => ({
-                                                key: id,
-                                                label: (
-                                                    <Link to={path}>
-                                                        {title}
-                                                    </Link>
-                                                ),
-                                            })
-                                        ),
                                     };
                                 }
                                 return {

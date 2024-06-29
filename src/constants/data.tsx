@@ -25,16 +25,9 @@ const MenuList: IMenus[] = [
     },
     {
         id: 3,
-        title: "Topshiriqlar",
+        title: "Darslar ro'yxati",
         path: "/tasks",
-        icon: <Icons.tasks />,
-        children: [
-            {
-                id: 4,
-                title: "Dars jadvali",
-                path: "/lesson",
-            }
-        ]
+        icon: <Icons.subject />,
     },
     {
         id: 5,
