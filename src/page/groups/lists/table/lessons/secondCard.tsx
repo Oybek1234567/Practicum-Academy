@@ -7,11 +7,7 @@ import Button from "./Button";
 const SecondCard = () => {
     const [open, setOpen] = useState(false);
     const [clicked, setClicked] = useState(0);
-    const [secondBtn, setSecondBtn] = useState(false);
-
-    const showSecondBtn = () => {
-        setSecondBtn(true);
-    };
+ 
 
     const Clicked = () => {
         setClicked((prevCount) => (prevCount + 1) % 2);
