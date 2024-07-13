@@ -4,8 +4,9 @@ import Help from "../page/help";
 import Lesson from "../page/lesson";
 import Main from "../page/main";
 import References from "../page/references";
-import Tasks from "../page/tasks";
+import Tasks from "../page/subject";
 import Lists from "../page/groups/lists/lists";
+import Frontend from "../page/subject/frontend";
 
 interface IRouter{
     id: number,
@@ -48,5 +49,10 @@ export const Router:IRouter[] = [
         id: 7,
         path: "/lists",
         element: <Lists />
+    },
+    {
+        id: 8,
+        path: "/frontend",
+        element: <Frontend />
     }
 ];
