@@ -1,10 +1,10 @@
-import { Table, TableColumnsType } from "antd"; 
+import { Table, TableColumnsType } from "antd";
 import { Link } from "react-router-dom";
 import { ReactNode } from "react";
-import { FrontendData, IFrontendData } from "./data";
+import { ISuccessData, SuccessData } from "./data";
 
-const FrontendTable = () => {
-    const columns: TableColumnsType<IFrontendData> = [
+const SuccessTable = () => {
+    const columns: TableColumnsType<ISuccessData> = [
         {
             title: "#",
             dataIndex: "number",
@@ -15,8 +15,8 @@ const FrontendTable = () => {
             render: (text: string) => <b>{text}</b>,
         },
         {
-            title: "Modul nomi",
-            dataIndex: "modul",
+            title: "Davomiyligi",
+            dataIndex: "time",
             render: (text: string) => <b>{text}</b>,
         },
         {
@@ -24,7 +24,7 @@ const FrontendTable = () => {
             dataIndex: "count",
             render: (text: string) => <b>{text}</b>,
         },
-         
+
         {
             title: "Status",
             dataIndex: "status",
@@ -70,9 +70,9 @@ const FrontendTable = () => {
     ];
     return (
         <div>
-            <Table columns={columns} dataSource={FrontendData} />
+            <Table columns={columns} dataSource={SuccessData} />
         </div>
     );
 };
 
-export default FrontendTable;
+export default SuccessTable;

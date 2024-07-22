@@ -7,6 +7,7 @@ import References from "../page/references";
 import Tasks from "../page/subject";
 import Lists from "../page/groups/lists/lists";
 import Frontend from "../page/subject/frontend";
+import Success from "../page/subject/frontend/access";
 
 interface IRouter{
     id: number,
@@ -54,5 +55,10 @@ export const Router:IRouter[] = [
         id: 8,
         path: "/frontend",
         element: <Frontend />
+    },
+    {
+        id: 9,
+        path: "/success",
+        element: <Success />
     }
 ];
