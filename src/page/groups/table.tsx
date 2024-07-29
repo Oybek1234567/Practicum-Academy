@@ -1,12 +1,13 @@
 import { Table, TableColumnsType } from "antd";
-import { Data, IDataType } from "./data";
+import { IDataType } from "./data";
 import { Link } from "react-router-dom";
-const GroupsTable = () => {
+
+interface GroupsTableProps {
+    sortedData: IDataType[];
+}
+
+const GroupsTable: React.FC<GroupsTableProps> = ({ sortedData }) => {
     const columns: TableColumnsType<IDataType> = [
-        {
-            title: "#",
-            dataIndex: "kalit",
-        },
         {
             title: "Guruh kodi",
             dataIndex: "link",
@@ -71,9 +72,10 @@ const GroupsTable = () => {
             ),
         },
     ];
+
     return (
         <div>
-            <Table columns={columns} dataSource={Data} />
+            <Table columns={columns} dataSource={sortedData} rowKey='id' />
         </div>
     );
 };

@@ -29,14 +29,9 @@ const MenuList: IMenus[] = [
         path: "/tasks",
         icon: <Icons.subject />,
     },
+    
     {
         id: 5,
-        title: "Tavsiyalar",
-        path: "/reference",
-        icon: <Icons.file />,
-    },
-    {
-        id: 6,
         title: "Yo'riqnomalar",
         path: "/help",
         icon: <Icons.help />,

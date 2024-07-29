@@ -1,11 +1,10 @@
 export interface IDataType {
     id: number;
-    kalit: string;
     link: string;
     group: string;
     day: string;
     time: string;
-    count: string;
+    count: number;
     lessonStarted: string;
     status: string;
     action: string;
@@ -14,120 +13,119 @@ export interface IDataType {
 const Data: IDataType[] = [
     {
         id: 1,
-        kalit: "1",
         link: "#P-10/2023",
         group: "Bugalteriya hisobi",
         day: "Juft kunlar",
         time: "09:00-11:00",
-        count: "5/14",
+        count: 10,
         lessonStarted: "01.04.2023 yil",
         status: "Yangi",
         action: "Batafsil",
     },
     {
-        id: 2,
-        kalit: "1",
+        id: 14,
+
         link: "#P-10/2023",
         group: "Bugalteriya hisobi",
         day: "Juft kunlar",
         time: "09:00-11:00",
-        count: "5/14",
+        count: 16,
         lessonStarted: "01.04.2023 yil",
         status: "Yangi",
         action: "Batafsil",
     },
     {
         id: 3,
-        kalit: "1",
+
         link: "#P-10/2023",
         group: "Bugalteriya hisobi",
         day: "Juft kunlar",
         time: "09:00-11:00",
-        count: "5/14",
+        count: 19,
         lessonStarted: "01.04.2023 yil",
         status: "Yangi",
         action: "Batafsil",
     },
     {
         id: 4,
-        kalit: "1",
+
         link: "#P-10/2023",
         group: "Bugalteriya hisobi",
         day: "Juft kunlar",
         time: "09:00-11:00",
-        count: "5/14",
+        count: 12,
         lessonStarted: "01.04.2023 yil",
         status: "Yangi",
         action: "Batafsil",
     },
     {
         id: 5,
-        kalit: "1",
+
         link: "#P-10/2023",
         group: "Bugalteriya hisobi",
         day: "Juft kunlar",
         time: "09:00-11:00",
-        count: "5/14",
+        count: 21,
         lessonStarted: "01.04.2023 yil",
         status: "Yangi",
         action: "Batafsil",
     },
     {
         id: 6,
-        kalit: "1",
+
         link: "#P-10/2023",
         group: "Bugalteriya hisobi",
         day: "Juft kunlar",
         time: "09:00-11:00",
-        count: "5/14",
+        count: 17,
         lessonStarted: "01.04.2023 yil",
         status: "Yangi",
         action: "Batafsil",
     },
     {
         id: 7,
-        kalit: "1",
+
         link: "#P-10/2023",
         group: "Bugalteriya hisobi",
         day: "Juft kunlar",
         time: "09:00-11:00",
-        count: "5/14",
+        count: 20,
         lessonStarted: "01.04.2023 yil",
         status: "Yangi",
         action: "Batafsil",
     },
     {
         id: 8,
-        kalit: "1",
+
         link: "#P-10/2023",
         group: "Bugalteriya hisobi",
         day: "Juft kunlar",
         time: "09:00-11:00",
-        count: "5/14",
+        count: 23,
         lessonStarted: "01.04.2023 yil",
         status: "Yangi",
         action: "Batafsil",
     },
     {
         id: 9,
-        kalit: "1",
+
         link: "#P-10/2023",
         group: "Bugalteriya hisobi",
         day: "Juft kunlar",
         time: "09:00-11:00",
-        count: "5/14",
+        count: 24,
         lessonStarted: "01.04.2023 yil",
         status: "Yangi",
         action: "Batafsil",
     },
     {
         id: 10,
-        kalit: "1",
+
         link: "#P-10/2023",
         group: "Bugalteriya hisobi",
         day: "Juft kunlar",
         time: "09:00-11:00",
-        count: "5/14",
+        count: 15,
         lessonStarted: "01.04.2023 yil",
         status: "Yangi",
         action: "Batafsil",

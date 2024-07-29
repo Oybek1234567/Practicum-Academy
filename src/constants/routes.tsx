@@ -3,11 +3,11 @@ import Groups from "../page/groups";
 import Help from "../page/help";
 import Lesson from "../page/lesson";
 import Main from "../page/main";
-import References from "../page/references";
 import Tasks from "../page/subject";
 import Lists from "../page/groups/lists/lists";
 import Frontend from "../page/subject/frontend";
 import Success from "../page/subject/frontend/access";
+import Video from "../page/subject/frontend/access/video";
 
 interface IRouter{
     id: number,
@@ -38,27 +38,27 @@ export const Router:IRouter[] = [
     },
     {
         id: 5,
-        path: "/reference",
-        element: <References />,
-    },
-    {
-        id: 6,
         path: "/help",
         element: <Help />,
     },
     {
-        id: 7,
+        id: 6,
         path: "/lists",
         element: <Lists />
     },
     {
-        id: 8,
+        id: 7,
         path: "/frontend",
         element: <Frontend />
     },
     {
-        id: 9,
+        id: 8,
         path: "/success",
         element: <Success />
+    },
+    {
+        id: 9,
+        path: "/video",
+        element: <Video />,
     }
 ];

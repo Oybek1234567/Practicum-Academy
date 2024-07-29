@@ -36,7 +36,7 @@ const SuccessTable = () => {
             title: "Amal",
             dataIndex: "btn",
             render: (btn: string) => (
-                <Link to={"/success"}>
+                <Link to={"/video"}>
                     <button
                         style={{
                             width: "135px",

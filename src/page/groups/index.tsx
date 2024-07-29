@@ -1,13 +1,31 @@
-import {  Input, Upload } from "antd";
+import { Input, Upload } from "antd";
 import "../../style/main/index.scss";
 import { DownloadOutlined, SearchOutlined } from "@ant-design/icons";
 import GroupsTable from "./table";
 import UseDrawer from "./useDrawer";
 import SetOpenDrawer from "../../hook/setOpenDrawer";
+import { useState } from "react";
+import { Data, IDataType } from "./data";
 
 const Groups = () => {
-    const { open, onOpen, onClosed } = SetOpenDrawer()
-    
+    const { open, onOpen, onClosed } = SetOpenDrawer();
+    const [originalData] = useState(Data as IDataType[]);
+    const [sortedData, setSortedData] = useState(originalData);
+    const [isAscending, setIsAscending] = useState(true);
+
+    const handleSort = (
+        event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+    ) => {
+        event.preventDefault();
+
+        const sorted = isAscending
+            ? [...sortedData].sort((a, b) => b.count - a.count)
+            : [...originalData].sort((a, b) => a.count - b.count);
+
+        setSortedData(sorted);
+        setIsAscending(!isAscending);
+    };
+
     return (
         <>
             <div className='groups'>
@@ -27,7 +45,12 @@ const Groups = () => {
                         placeholder='Izlash'
                         className='groups__form_input'
                     />
-                    <button className='groups__form_filter'>Filter</button>
+                    <button
+                        type='button'
+                        className='groups__form_filter'
+                        onClick={handleSort}>
+                        Filter
+                    </button>
                     <button
                         type='button'
                         className='groups__form_add'
@@ -37,7 +60,7 @@ const Groups = () => {
                     <UseDrawer open={open} onClosed={onClosed} />
                 </form>
             </div>
-            <GroupsTable />
+            <GroupsTable sortedData={sortedData} />
         </>
     );
 };
